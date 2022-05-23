@@ -14,7 +14,8 @@ module.exports = {
           "base-100": "#ffffff",
         },
       },
-      "white",
+      
+      "#FFF8F3",
       "cupcake",
     ],
   },
