@@ -12,7 +12,7 @@ const PurchaseItem = ({tool, setItems}) => {
             <h4>Order Quantity: {tool.orderQuantity}</h4>
             <h4>Available Quantity : {tool.availableQuantity}</h4>
             <h4>Price : {tool.price}</h4>
-             <label for="booking-modal" onClick={()=>setItems(tool)}
+             <label htmlFor="booking-modal" onClick={()=>setItems(tool)}
               className="btn btn-primary btn-block">Booking Now</label>
         </div>
     </div>

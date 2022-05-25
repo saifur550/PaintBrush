@@ -1,22 +1,16 @@
 import React from 'react';
 import { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 const BookingModel = ({items, setItems}) => {
-    const[number, setNumber] = useState(100)
+    let [num, setNum]= useState(150);
 
     const {name, img, price ,description, orderQuantity, availableQuantity } = items;
+    const [user, loading, error] = useAuthState(auth);
     
 
 
- 
-    const handleIncrement =()=>{
-        console.log('click increment');  
-       
-  }
 
-    const handleDecrement =()=>{
-        console.log('click Decrement'); 
-        
-    }
 
 
     const handleBooking = event =>{
@@ -30,6 +24,28 @@ const BookingModel = ({items, setItems}) => {
 
     }
 
+    // 
+    let incNum =()=>{
+        if(num<150)
+        {
+        setNum(Number(num)+1);
+      
+        
+        }
+
+      };
+      let decNum = () => {
+         if(num>0)
+         {
+          setNum(num - 1);
+         }
+      }
+
+      let handleChange = (e)=>{
+        setNum(e.target.value);
+       }
+
+
     return (
         <div>
         <input type="checkbox" id="booking-modal" className="modal-toggle" />
@@ -38,21 +54,21 @@ const BookingModel = ({items, setItems}) => {
             <div className="modal-box">
 
                 <div className="card p-5 bg-yellow-300 ">
-                <label for="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+                <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                 <h4 className='text-2xl text-primary font-bold text-center fonts-bold'>Purchase item : {name.slice(0,20)} </h4>
           <form onSubmit={handleBooking} >
            
             <div className="card-body items-center text-center">
-            <input type="text" name="name" placeholder='Name'  className="input input-bordered w-full max-w-xs" />
-            <input type="text" name="email" placeholder='Email'  className="input input-bordered w-full max-w-xs" />
+            <input type="text" name="name" disabled value={user?.displayName || ' '}  className="input input-bordered w-full max-w-xs" />
+            <input type="text" name="email" disabled value={user?.email || ' '}  className="input input-bordered w-full max-w-xs" />
             <input type="number" name="phone" placeholder='phone'  className="input input-bordered w-full max-w-xs" />
             <label htmlFor="">Available Quantity:</label>
             <input type="number" disabled value={availableQuantity}  name="availableQuantity" className='input input-bordered w-full max-w-xs'  />
             <label htmlFor="">Order Quantity:</label>
             <div className="flex">
-            <button onClick={()=> handleIncrement()} className='btn mr-5 btn-circle'>+</button>
-            <input type="number"   name="orderQuantity"  className='input input-bordered w-full max-w-xs' />
-            <button onClick={() => handleDecrement()} className='btn ml-5 btn-circle'>-</button>
+            <button onClick={incNum} className='btn mr-5 btn-circle'>+</button>
+            <input type="number"   name="orderQuantity" value={num} onChange={handleChange} className='input input-bordered w-full max-w-xs' />
+            <button onClick={decNum} className='btn ml-5 btn-circle'>-</button>
             </div>
             <input type="text" name="price" disabled value={price}  className='input input-bordered w-full max-w-xs' />
             <input type="submit" value="Submit" className="btn btn-white w-full max-w-xs" />
