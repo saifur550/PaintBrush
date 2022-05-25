@@ -34,10 +34,11 @@ const Login = () => {
     console.log(data);
   };
 
-  if (user1 || user) {
-    console.log(user1, user);
-    navigate(from, { replace: true });
-  }
+  useEffect( () =>{
+    if (user || user1) {
+        navigate(from, { replace: true });
+    }
+}, [user, user1, from, navigate])
 
   if (loading || loading1) {
     return <Loading></Loading>

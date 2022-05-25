@@ -5,8 +5,8 @@ import auth from '../../firebase.init';
 const BookingModel = ({items, setItems}) => {
     let [num, setNum]= useState(150);
 
-    const {name, img, price ,description, orderQuantity, availableQuantity } = items;
-    const [user, loading, error] = useAuthState(auth);
+    const {_id, name, img, price ,description, orderQuantity, availableQuantity } = items;
+    const [user] = useAuthState(auth);
     
 
 
@@ -19,12 +19,12 @@ const BookingModel = ({items, setItems}) => {
         const email = event.target.email.value
         const phone = event.target.phone.value
      
-        console.log(name, email, phone);
+        console.log(name, email, phone , _id);
         // setItems(null)
 
     }
 
-    // 
+    //  increment
     let incNum =()=>{
         if(num<150)
         {
@@ -34,6 +34,7 @@ const BookingModel = ({items, setItems}) => {
         }
 
       };
+      // decrement
       let decNum = () => {
          if(num>0)
          {

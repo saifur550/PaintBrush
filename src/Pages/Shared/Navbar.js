@@ -6,6 +6,7 @@ import logo from '../../Assets/logo/logo.png'
 import auth from '../../firebase.init';
 
 const Navbar = () => {
+    
 
     const [user] = useAuthState(auth);
 
@@ -18,7 +19,12 @@ const Navbar = () => {
         <li><Link to="/purchase">Tools</Link></li>
         <li><Link to="/myPortfolio">My Portfolio</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li>{user ? <button className="btn btn-ghost" onClick={logout} >Sign Out</button> : <Link to="/login">Login</Link>}</li>
+        <li>{user ? <button className="btn btn-ghost" onClick={logout} >
+            <>
+            <p className='text-primary font-bold'>{user.displayName}</p>
+            </>
+             Sign Out
+            </button> : <Link to="/login">Login</Link>}</li>
     </>
     return (
         <div className="navbar max-w-7xl mx-auto ">
