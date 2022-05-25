@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Contact = () => {
+const MyPortfolio = () => {
     return (
         <div className='h-screen'>
-            <h4>Contact form</h4>
+            <h4>My portfolio</h4>
         </div>
     );
 };
 
-export default Contact;
+export default MyPortfolio;

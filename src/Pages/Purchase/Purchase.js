@@ -2,10 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import BookingModel from '../PurchasesItem/BookingModel';
-import Tool from './Tool';
+import PurchaseItem from './PurchaseItem';
 
-const Tools = () => {
 
+const Purchase = () => {
     const [tools, setTools] = useState([])
     const [items, setItems] = useState(null)
 
@@ -15,11 +15,8 @@ const Tools = () => {
         .then(data=> setTools(data))
         
     }, [])
-
-    // heroku site : https://warm-hamlet-43437.herokuapp.com/
-
     return (
-       <div className="bg-purple-100 py-28">
+        <div className="bg-purple-100 py-28">
             <div className=' max-w-7xl mx-auto px-12'>
         <div className='text-center '>
             <h3 className='text-primary  text-4xl font-bold uppercase'>Our Tools</h3>
@@ -28,17 +25,22 @@ const Tools = () => {
         </div>
         <div className='grid mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
             {
-                tools?.slice(0,6)?.map(tool =><Tool
+                tools.map(tool =><PurchaseItem
                     key={tool._id}
                     tool={tool}
                     setItems={setItems}
-                ></Tool>)
+                ></PurchaseItem>)
             }
         </div>
-      
+        {
+            items && <BookingModel
+             items={items}
+             setItems={setItems}
+             ></BookingModel>
+        }
     </div>
        </div>
     );
 };
 
-export default Tools;
+export default Purchase;

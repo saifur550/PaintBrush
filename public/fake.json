@@ -1,10 +1,34 @@
 [
     {
         "name": "MTS - Paintbrush Pride - Black Set of 5",
-        "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
+        "img": "https://wedev0.netlify.app/assign-12/img1.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 50,
+        "availableQuantity": 150,
+        "price":"$200"
+    },
+    {
+        "name": "MTS - Paintbrush Pride - Black Set of 5",
+        "img": "https://wedev0.netlify.app/assign-12/img2.jpg",
+        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "orderQuantity": 100,
+        "availableQuantity": 150,
+        "price":"$200"
+    },
+    {
+        "name": "MTS - Paintbrush Pride - Black Set of 5",
+        "img": "https://wedev0.netlify.app/assign-12/img3.jpg",
+        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "orderQuantity": 100,
+        "availableQuantity": 150,
+        "price":"$200"
+    },
+    {
+        "name": "MTS - Paintbrush Pride - Black Set of 5",
+        "img": "https://wedev0.netlify.app/assign-12/img4.jpg",
+        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "orderQuantity": 100,
+        "availableQuantity": 150,
         "price":"$200"
     },
     {
@@ -12,47 +36,23 @@
         "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 50,
+        "availableQuantity": 150,
         "price":"$200"
     },
     {
         "name": "MTS - Paintbrush Pride - Black Set of 5",
-        "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
+        "img": "https://wedev0.netlify.app/assign-12/img6.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 50,
+        "availableQuantity": 150,
         "price":"$200"
     },
     {
         "name": "MTS - Paintbrush Pride - Black Set of 5",
-        "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
+        "img": "https://wedev0.netlify.app/assign-12/img7.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 50,
-        "price":"$200"
-    },
-    {
-        "name": "MTS - Paintbrush Pride - Black Set of 5",
-        "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
-        "orderQuantity": 100,
-        "availableQuantity": 50,
-        "price":"$200"
-    },
-    {
-        "name": "MTS - Paintbrush Pride - Black Set of 5",
-        "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
-        "orderQuantity": 100,
-        "availableQuantity": 50,
-        "price":"$200"
-    },
-    {
-        "name": "MTS - Paintbrush Pride - Black Set of 5",
-        "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
-        "orderQuantity": 100,
-        "availableQuantity": 50,
+        "availableQuantity": 150,
         "price":"$200"
     }
 ]
