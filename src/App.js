@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './Pages/Shared/Navbar';
 import { Routes, Route} from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
@@ -11,6 +12,7 @@ import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
 import Purchase from './Pages/Purchase/Purchase';
 import RequireAuth from './Pages/Login/RequireAuth';
 import AllItem from './Pages/Purchase/AllItem';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -34,6 +36,7 @@ function App() {
         <Route path="signup" element={<SignUp />} />
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

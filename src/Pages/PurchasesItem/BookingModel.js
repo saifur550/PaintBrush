@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
+
 const BookingModel = ({items, setItems}) => {
     let [num, setNum]= useState(150);
 
@@ -25,17 +26,18 @@ const BookingModel = ({items, setItems}) => {
 
 
         const booking = {
-            personId: _id,
-            person: name,
-            personEmail: user.email,
+            itemsId: _id,
+            items: name,
+            itemsEmail: user.email,
             personName: user.displayName,
             phone: event.target.phone.value,
-            orderQuantity:event.target.orderQuantity.value
+            orderQuantity:event.target.orderQuantity.value,
+            price:event.target.price.value
         }
 
          // setItems(null)
 
-         fetch('https://warm-hamlet-43437.herokuapp.com/', {
+         fetch('https://warm-hamlet-43437.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -44,15 +46,11 @@ const BookingModel = ({items, setItems}) => {
         })
             .then(res => res.json())
             .then(data => {
-                if(data.success){
-                    toast(`Booking item`)
-                }
-                else{
-                    toast.error(`Already have booking`)
-                }
+             toast('Booking Confirm')
                
             });
-
+           
+             setItems(null)
     }
 
     //  increment
