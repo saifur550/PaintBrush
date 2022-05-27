@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import {  useNavigate, useLocation, Link } from 'react-router-dom';
 import Loading from "../Shared/Loading";
 import { useEffect } from "react";
+import useToken from "../../hooks/UseToken";
 
 const Login = () => {
     let signInError;
@@ -26,6 +27,8 @@ const Login = () => {
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
 
+    const [token]  = useToken(user || user1);
+
 
     
 
@@ -37,8 +40,18 @@ const Login = () => {
   useEffect( () =>{
     if (user || user1) {
         navigate(from, { replace: true });
+        // navigate('/purchase');
     }
-}, [user, user1, from, navigate])
+
+
+}, [token, from, navigate])
+
+
+
+
+
+
+
 
   if (loading || loading1) {
     return <Loading></Loading>

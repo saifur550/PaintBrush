@@ -12,13 +12,16 @@ const Navbar = () => {
 
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken');
     };
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li><Link to="/about">Blogs</Link></li>
         <li><Link to="/purchase">Tools</Link></li>
         <li><Link to="/myPortfolio">My Portfolio</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        {
+            user  &&   <li><Link to="/dashBoard">Dashboard</Link></li>
+        }
         <li>{user ? <button className="btn btn-ghost" onClick={logout} >
             <>
             <p className='text-primary font-bold'>{user.displayName}</p>

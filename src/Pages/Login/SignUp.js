@@ -30,6 +30,7 @@ const SignUp = () => {
     if (error || error1 || updateError) {
         signInError = <p className='text-red-500'><small>{error?.message || error1?.message || updateError?.message}</small></p>
     }
+    
     if (token) {
         navigate('/purchase');
     }

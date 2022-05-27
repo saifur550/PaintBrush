@@ -13,6 +13,7 @@ import Purchase from './Pages/Purchase/Purchase';
 import RequireAuth from './Pages/Login/RequireAuth';
 import AllItem from './Pages/Purchase/AllItem';
 import 'react-toastify/dist/ReactToastify.css';
+import DashBoard from './Pages/Dashboard/DashBoard';
 
 
 
@@ -30,6 +31,11 @@ function App() {
         <Route path="purchase" element={
            <RequireAuth>
            <Purchase />
+         </RequireAuth>
+        } />
+        <Route path="dashBoard" element={
+           <RequireAuth>
+           <DashBoard />
          </RequireAuth>
         } />
         <Route path="login" element={<Login/>} />
