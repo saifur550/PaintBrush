@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const BookingModel = ({items, setItems}) => {
-    let [num, setNum]= useState(150);
+    let [num, setNum]= useState(300);
 
     const {_id, name, img, price ,description, orderQuantity, availableQuantity } = items;
     const [user] = useAuthState(auth);
@@ -55,22 +55,9 @@ const BookingModel = ({items, setItems}) => {
     }
 
     //  increment
-    let incNum =()=>{
-        if(num<150)
-        {
-        setNum(Number(num)+1);
+  
       
-        
-        }
 
-      };
-      // decrement
-      let decNum = () => {
-         if(num>0)
-         {
-          setNum(num - 1);
-         }
-      }
 
       let handleChange = (e)=>{
         setNum(e.target.value);
@@ -101,11 +88,8 @@ const BookingModel = ({items, setItems}) => {
             <label htmlFor="">Available Quantity:</label>
             <input type="number" disabled value={availableQuantity}  name="availableQuantity" className='input input-bordered w-full max-w-xs'  />
             <label htmlFor="">Order Quantity:</label>
-            <div className="flex">
-            <button onClick={incNum} className='btn mr-5 btn-circle'>+</button>
+
             <input type="number"   name="orderQuantity" value={num} onChange={handleChange} className='input input-bordered w-full max-w-xs' />
-            <button onClick={decNum} className='btn ml-5 btn-circle'>-</button>
-            </div>
             <input type="text" name="price" disabled value={price}  className='input input-bordered w-full max-w-xs' />
             <input type="submit" value="Submit" className="btn btn-white w-full max-w-xs" />
          

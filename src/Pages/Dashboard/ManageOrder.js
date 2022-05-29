@@ -25,7 +25,7 @@ const ManageOrder = () => {
                         <tr>
                             <th></th>
                             <th>Name</th>
-                            <th>Role</th>
+                            <th>Action</th>
                             <th>Favorite Color</th>
                         </tr>
                     </thead>

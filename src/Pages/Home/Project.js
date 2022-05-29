@@ -13,7 +13,7 @@ const Project = () => {
     <>
    <div className="mt-28 text-center mb-5">
    <h4 className="text-primary    text-4xl font-bold uppercase">Our Recent Project </h4>
-    <p className="mb-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, excepturi.</p>
+    <p className="mb-10"></p>
    </div>
     <div className="hero project-bg min-h-screen">
       <div className=" bg-opacity-60">

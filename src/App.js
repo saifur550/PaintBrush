@@ -18,6 +18,7 @@ import MyOrder from './Pages/Dashboard/MyOrder';
 import AddReview from './Pages/Dashboard/AddReview';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import ManageOrder from './Pages/Dashboard/ManageOrder';
+import PageNotfound from './Pages/NotFoundPage/PageNotfound';
 
 
 
@@ -28,7 +29,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About/>} />
+        <Route path="blog" element={<About/>} />
         <Route path="myPortfolio" element={<MyPortfolio/>} />
         <Route path="allItem" element={<AllItem/>} />
         <Route path="contact" element={<Contact/>} />
@@ -47,7 +48,9 @@ function App() {
 
         <Route path="login" element={<Login/>} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="*" element={<PageNotfound />} />
       </Routes>
+
       <Footer></Footer>
       <ToastContainer />
     </div>
