@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import useToken from "../../hooks/UseToken";
 
 const Login = () => {
-    let signInError;
+  let signInError;
   const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
   const {
     register,

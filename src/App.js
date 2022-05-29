@@ -14,6 +14,10 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import AllItem from './Pages/Purchase/AllItem';
 import 'react-toastify/dist/ReactToastify.css';
 import DashBoard from './Pages/Dashboard/DashBoard';
+import MyOrder from './Pages/Dashboard/MyOrder';
+import AddReview from './Pages/Dashboard/AddReview';
+import MyProfile from './Pages/Dashboard/MyProfile';
+import ManageOrder from './Pages/Dashboard/ManageOrder';
 
 
 
@@ -33,11 +37,14 @@ function App() {
            <Purchase />
          </RequireAuth>
         } />
-        <Route path="dashBoard" element={
-           <RequireAuth>
-           <DashBoard />
-         </RequireAuth>
-        } />
+
+         <Route path="dashboard" element={<RequireAuth><DashBoard /></RequireAuth>} >
+         <Route index element={<MyOrder></MyOrder>}></Route>
+         <Route path="/dashboard/addReview" element={<AddReview></AddReview>}></Route>
+         <Route path="/dashboard/myProfile" element={<MyProfile></MyProfile>}></Route>
+         <Route path="/dashboard/manageOrder" element={<ManageOrder></ManageOrder>}></Route>
+        </Route>
+
         <Route path="login" element={<Login/>} />
         <Route path="signup" element={<SignUp />} />
       </Routes>

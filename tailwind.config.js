@@ -15,7 +15,7 @@ module.exports = {
         },
       },
       
-      "#FFF8F3",
+      "dark",
       "cupcake",
     ],
   },

@@ -28,7 +28,8 @@ const BookingModel = ({items, setItems}) => {
         const booking = {
             itemsId: _id,
             items: name,
-            itemsEmail: user.email,
+            product:event.target.item.value,
+            patient: user.email,
             personName: user.displayName,
             phone: event.target.phone.value,
             orderQuantity:event.target.orderQuantity.value,
@@ -80,6 +81,7 @@ const BookingModel = ({items, setItems}) => {
 
     return (
         <div>
+           
         <input type="checkbox" id="booking-modal" className="modal-toggle" />
        
         <div className="modal modal-bottom sm:modal-middle">
@@ -88,9 +90,11 @@ const BookingModel = ({items, setItems}) => {
                 <div className="card p-5 bg-yellow-300 ">
                 <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                 <h4 className='text-2xl text-primary font-bold text-center fonts-bold'>Purchase item : {name.slice(0,20)} </h4>
+                <img className='mx-auto' style={{width:'200px'}} src={img} alt="" />
           <form onSubmit={handleBooking} >
            
             <div className="card-body items-center text-center">
+            <input type="text" name="item" disabled value={name}  className="input input-bordered w-full max-w-xs" />
             <input type="text" name="name" disabled value={user?.displayName || ' '}  className="input input-bordered w-full max-w-xs" />
             <input type="text" name="email" disabled value={user?.email || ' '}  className="input input-bordered w-full max-w-xs" />
             <input type="number" name="phone" placeholder='phone'  className="input input-bordered w-full max-w-xs" />
@@ -110,6 +114,7 @@ const BookingModel = ({items, setItems}) => {
         </div>
             </div>
         </div>
+        
     </div>
     );
 };

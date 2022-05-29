@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ABout = () => {
+const About = () => {
     return (
         <div className='h-screen'>
             <h4>About section</h4>
@@ -8,4 +8,4 @@ const ABout = () => {
     );
 };
 
-export default ABout;
+export default About;
