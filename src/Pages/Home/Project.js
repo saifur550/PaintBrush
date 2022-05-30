@@ -1,10 +1,13 @@
 import React from "react";
-import projet1 from '../../Assets/Project/project1.jpeg'
-import projet2 from '../../Assets/Project/project2.jpeg'
-import projet3 from '../../Assets/Project/project3.jpeg'
+import projet1 from '../../Assets/Project/a4.jpeg'
+import projet2 from '../../Assets//Project/a1.jpg'
+import projet3 from '../../Assets/Project/a2.jpg'
 import projet4 from '../../Assets/Project/project4.jpeg'
 import projet5 from '../../Assets/Project/project1.jpeg'
-import projet6 from '../../Assets/Project/project3.jpeg'
+import projet01 from '../../Assets/Project/a3.jpeg'
+import projet02 from '../../Assets/Project/project3.jpeg'
+import projet03 from '../../Assets/Project/project3.jpeg'
+import projet04 from '../../Assets/Project/project3.jpeg'
 
 const Project = () => {
   return (
@@ -57,7 +60,7 @@ const Project = () => {
       <div className="flex flex-wrap w-1/3">
         <div className="w-full p-1 md:p-2">
           <img alt="gallery" className="block object-cover object-center w-full h-full rounded-lg"
-             src={projet6}/>
+             src={projet01}/>
         </div>
       </div>
     </div>

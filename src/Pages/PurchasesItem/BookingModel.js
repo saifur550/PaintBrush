@@ -87,7 +87,7 @@ const BookingModel = ({items, setItems}) => {
             <input type="number" name="phone" placeholder='phone'  className="input input-bordered w-full max-w-xs" />
             <label htmlFor="">Available Quantity:</label>
             <input type="number" disabled value={availableQuantity}  name="availableQuantity" className='input input-bordered w-full max-w-xs'  />
-            <label htmlFor="">Order Quantity:</label>
+            <label className='text-red-500' htmlFor=""> Min Order Quantity:</label>
 
             <input type="number"   name="orderQuantity" value={num} onChange={handleChange} className='input input-bordered w-full max-w-xs' />
             <input type="text" name="price" disabled value={price}  className='input input-bordered w-full max-w-xs' />

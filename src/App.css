@@ -32,3 +32,14 @@ ul li a{
   object-fit: cover;
   margin-right: 5px;
 }
+
+
+li.mb-2:hover {
+  background: #fff;
+  border-radius: .5rem;
+}
+
+
+ul.menu.p-4.overflow-y-auto.w-40.side-clr {
+  background: #FF8303;
+}

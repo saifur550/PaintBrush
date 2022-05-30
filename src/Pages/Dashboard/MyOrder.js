@@ -45,6 +45,7 @@ const MyOrder = () => {
                             <th>Item</th>
                             <th>User</th>
                             <th>orderQuantity</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -54,6 +55,7 @@ const MyOrder = () => {
                                 <td>{order.product}</td>
                                 <td>{order.personName}</td>
                                 <td>{order.orderQuantity}</td>
+                                <td><button className='btn btn-xs'>Cancel</button></td>
                             </tr>)
                         }
 
