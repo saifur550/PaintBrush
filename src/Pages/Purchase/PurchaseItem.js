@@ -9,8 +9,8 @@ const PurchaseItem = ({tool, setItems}) => {
         <div className="card-body items-center text-center">
             <h2 className="card-title">{tool.name.slice(0,23)}</h2>
             <p>{tool.description.slice(0,92)}</p>
-            <h4>Order Quantity: {tool.orderQuantity}</h4>
             <h4>Available Quantity : {tool.availableQuantity}</h4>
+            <h4> min Order Quantity: {tool.orderQuantity}</h4>
             <h4>Price : {tool.price}</h4>
              <label htmlFor="booking-modal" onClick={()=>setItems(tool)}
               className="btn btn-primary btn-block">Booking Now</label>

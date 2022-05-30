@@ -10,10 +10,27 @@ const MyProfile = () => {
           <h4 className='text-2xl font-bold'>User Profile</h4>
           </div>
         <div class="card-body text-white bg-primary">
-          <h2 class="card-title">{user.displayName}</h2>
-          <p>{user.email}</p>
-          <div class="card-actions ">
-            <button class="btn btn-secondary">contact</button>
+          <h2 class="card-title"> User Name : {user.displayName}</h2>
+          <p> User Email: {user.email}</p>
+         
+          <div>
+            <label htmlFor="">Education:</label>
+            <input type="text" placeholder="Type here" class="input text-black input-bordered w-full max-w-xs" />
+          </div>
+          <div>
+            <label htmlFor="">Location:</label>
+            <input type="text" placeholder="Type here" class="input text-black input-bordered w-full max-w-xs" />
+          </div>
+          <div>
+            <label htmlFor="">Number:</label>
+            <input type="text" placeholder="Type here" class="input text-black input-bordered w-full max-w-xs" />
+          </div>
+          <div>
+            <label htmlFor="">PhotoUrl:</label>
+            <input type="file" placeholder="Type here" class="input text-black input-bordered w-full max-w-xs" />
+          </div>
+          <div className='text-center mt-2'>
+          <button class="btn btn-wide btn-secondary">submit</button>
           </div>
         </div>
       </div>

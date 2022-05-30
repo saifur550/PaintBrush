@@ -72,14 +72,14 @@ const BookingModel = ({items, setItems}) => {
         <input type="checkbox" id="booking-modal" className="modal-toggle" />
        
         <div className="modal modal-bottom sm:modal-middle">
-            <div className="modal-box">
-
+           <div className="modal-box">
                 <div className="card p-5 bg-yellow-300 ">
                 <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                 <h4 className='text-2xl text-primary font-bold text-center fonts-bold'>Purchase item : {name.slice(0,20)} </h4>
                 <img className='mx-auto' style={{width:'200px'}} src={img} alt="" />
+
+
           <form onSubmit={handleBooking} >
-           
             <div className="card-body items-center text-center">
             <input type="text" name="item" disabled value={name}  className="input input-bordered w-full max-w-xs" />
             <input type="text" name="name" disabled value={user?.displayName || ' '}  className="input input-bordered w-full max-w-xs" />
@@ -92,13 +92,15 @@ const BookingModel = ({items, setItems}) => {
             <input type="number"   name="orderQuantity" value={num} onChange={handleChange} className='input input-bordered w-full max-w-xs' />
             <input type="text" name="price" disabled value={price}  className='input input-bordered w-full max-w-xs' />
             <input type="submit" value="Submit" className="btn btn-white w-full max-w-xs" />
-         
             </div>
           </form>
+
+          
+
+
         </div>
             </div>
-        </div>
-        
+        </div> 
     </div>
     );
 };
