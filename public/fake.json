@@ -1,50 +1,50 @@
 [
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 1",
+        "name": "Paintbrush Pride ",
         "img": "https://wedev0.netlify.app/assign-12/img1.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 550,
         "price":"$200"
     },
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 2",
+        "name": "Double Thick 4 Inch",
         "img": "https://wedev0.netlify.app/assign-12/img2.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "description": "Super decontamination ability:The brush head is made of stainless steel (silver) for fast rust removal, paint removal..",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 350,
         "price":"$200"
     },
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 3",
+        "name": "Long Handle Paint Brushes",
         "img": "https://wedev0.netlify.app/assign-12/img3.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "description": "This fence brush is suit for interior and exterior wall, especially exterior wall.It contains white natural bristle and polyester filament. .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 650,
         "price":"$200"
     },
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 4",
+        "name": "Fence Paint For Walls",
         "img": "https://wedev0.netlify.app/assign-12/img4.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 350,
         "price":"$200"
     },
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 5",
+        "name": "Plastic Handle Fence",
         "img": "https://wedev0.netlify.app/assign-12/img5.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "description": "[Dimensions of wall paintbrush] - The paint brush several different sizes. 40*100mm wall brush for sheds, terraces and wood paint.e .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 750,
         "price":"$200"
     },
     {
         "name": "MTS - Paintbrush Pride - Black Set of 6",
         "img": "https://wedev0.netlify.app/assign-12/img6.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "description": "Blended chemical fiber/hog bristle brush The brushes are made of pig bristles mixed with chemical fiber, which have the advantages of softness and no hair loss, and will not cause harm to the car..",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 380,
         "price":"$200"
     },
 
@@ -53,23 +53,23 @@
         "img": "https://wedev0.netlify.app/assign-12/img7.jpg",
         "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 440,
         "price":"$200"
     },
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 8",
-        "img": "https://wedev0.netlify.app/assign-12/img7.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "name": "Paint Roller Radiator ",
+        "img": "https://wedev0.netlify.app/assign-12/img9.jpg",
+        "description": "HIGH QUALITY MATERIALS – Paint brushes are made of high quality rayon, these synthetic fibers hold more paint, save time and reduce streaking on your walls or trim. .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 850,
         "price":"$200"
     },
     {
-        "name": "MTS - Paintbrush Pride - Black Set of 9",
-        "img": "https://wedev0.netlify.app/assign-12/img7.jpg",
-        "description": "A brush for the Do It Yourself person, ideal for interior and exterior home use. Easy to use, perfect for home use .",
+        "name": "Natural Bristle Mixed",
+        "img": "https://wedev0.netlify.app/assign-12/img10.jpg",
+        "description": "SRT filament blends hold more paint to save time, less streaking and quality walls and trim. Efficient performance: Sufficient amount of paint applied. .",
         "orderQuantity": 100,
-        "availableQuantity": 150,
+        "availableQuantity": 250,
         "price":"$200"
     }
 ]

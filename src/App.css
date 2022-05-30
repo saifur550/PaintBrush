@@ -26,3 +26,9 @@ ul li a{
  
 }
 
+.userImg{
+  height: 600px;
+  width: 500px;
+  object-fit: cover;
+  margin-right: 5px;
+}
